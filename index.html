@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- input field  -->
+        <label class="heading">Calculator</label>
+        <div class="text">
+            <input type="text" id="display" class="number" placeholder="0" />
+        </div>
+
+        <!-- buttons -->
+        <div class="grid-container">
+            <!-- row 1 -->
+            <button class="grid-item plus" onclick="num('+')">+</button>
+            <button class="grid-item minus" onclick="num('-')">-</button>
+            <button class="grid-item multiply" onclick="num('*')">*</button>
+            <button class="grid-item divide" onclick="num('/')">/</button>
+
+            <!-- row 2 -->
+            <button class="grid-item" onclick="num(7)">7</button>
+            <button class="grid-item" onclick="num(8)">8</button>
+            <button class="grid-item" onclick="num(9)">9</button>
+            <button class="grid-item equal" onclick="equal()">=</button>
+
+            <!-- row 3 -->
+            <button class="grid-item" onclick="num(4)">4</button>
+            <button class="grid-item" onclick="num(5)">5</button>
+            <button class="grid-item" onclick="num(6)">6</button>
+
+            <!-- row 4 -->
+            <button class="grid-item" onclick="num(1)">1</button>
+            <button class="grid-item" onclick="num(2)">2</button>
+            <button class="grid-item" onclick="num(3)">3</button>
+
+            <!-- row 5 -->
+            <button class="grid-item" onclick="num(0)">0</button>
+            <button class="grid-item" onclick="num('.')">.</button>
+            <button class="grid-item" onclick="cLear(0)">C</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
